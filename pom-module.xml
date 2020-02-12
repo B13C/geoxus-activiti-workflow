@@ -9,13 +9,36 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>geoxus-activity-workflow</artifactId>
+    <artifactId>geoxus-activiti-workflow</artifactId>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <activiti.version>5.23.0</activiti.version>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.geoxus</groupId>
             <artifactId>geoxus-core</artifactId>
             <version>1.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-spring-boot-starter-basic</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-diagram-rest</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-modeler</artifactId>
+            <version>${activiti.version}</version>
         </dependency>
     </dependencies>
 
