@@ -25,9 +25,20 @@
             <artifactId>geoxus-core</artifactId>
             <version>1.0.0.RELEASE</version>
         </dependency>
+        <!-- Activiti 启动器 -->
         <dependency>
             <groupId>org.activiti</groupId>
             <artifactId>activiti-spring-boot-starter-basic</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-spring-boot-starter-actuator</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-explorer</artifactId>
             <version>${activiti.version}</version>
         </dependency>
         <dependency>
